@@ -1,4 +1,4 @@
-# This project is a fork of [TrackasiaAnnotationExtension](https://github.com/mapbox/mapbox-annotation-extension), aiming to make it work with [Trackasia's iOS SDK](https://github.com/trackasia/trackasia-gl-native). The migration to use the Trackasia SDK isn't completed, yet. Therefore this Extension currently should't be used!
+# This project is a fork of [TrackasiaAnnotationExtension](https://github.com/mapbox/mapbox-annotation-extension), aiming to make it work with [Trackasia's iOS SDK](https://github.com/track-asia/trackasia-gl-native). The migration to use the Trackasia SDK isn't completed, yet. Therefore this Extension currently shouldn't be used!
 
 # Trackasia Annotation Extension for iOS
 
@@ -91,7 +91,7 @@ func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
   
   let polygon = MGLPolygonStyleAnnotation(coordinates: polygonCoordinates, count: UInt(polygonCoordinates.count))
   polygon.fillOutlineColor = .red
-  polygonAnnotationController.add(line)
+  polygonAnnotationController.add(polygon)
 }
 ```
 
@@ -166,13 +166,13 @@ All of these properties mirror the same values specified in the [Mapbox Style Sp
 - [`circleOpacity`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-opacity)
 - [`circleStrokeWidth`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-stroke-width)
 - [`circleStrokeColor`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-stroke-color)
-- [`circleStrokeOpacity`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-translate)
+- [`circleStrokeOpacity`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-stroke-opacity)
 
 **MGLCircleAnnotationController**
 - [`circleTranslation`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-translate)
 - [`circleTranslationAnchor`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-translate-anchor)
 - [`circlePitchAlignment`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-pitch-alignment)
-- [`circleScaleAlignment`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-scale-aslignment)
+- [`circleScaleAlignment`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-scale-alignment)
 
 **MGLLineStyleAnnotation**
 - [`lineJoin`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layout-line-line-join)
